@@ -1,0 +1,202 @@
+/* Empty. Add your own CSS if you like */
+/*ion-nav-view {
+  background-size: 100% auto;
+  background: url('../img/iPhone-Bg.png') top left no-repeat !important;
+  background-size: 100% 100%;
+}
+.pane, .view, .tabs {
+  background-color: transparent;
+}
+.tabs {
+  width: 100%;
+  color: rgba(51,153,204,1);
+  font-family: Gotham_Book;
+  font-size: 1.75rem;
+  border-bottom: 1px solid #0b2b48;
+}
+.tabs-top > .tabs, .tabs.tabs-top {
+	top: 0px;
+}
+.has-tabs-top {
+  top: 36px;
+}
+.tab-item .icon {
+  height: 100%;
+  font-size: 20px;
+  line-height: 2.4;
+}
+.tab-item.tab-item-active {
+  color: #fff;
+}
+.tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, 
+.tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
+	font-family: arial;
+	font-size: 13px;
+	line-height: 1.4;
+	margin: 0px;
+	padding: 0px;
+}
+div.tabs > a.tab-item {
+  background: url('../img/seperator_phone.png') top right no-repeat;
+}
+div.tabs > a.tab-item:last-child {
+  background: none;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-size: 15px;
+  color: #fff;
+  margin-top: 12px !important;
+}
+.bar .title {
+  margin-top: 0px !important;
+}
+.tab-title {
+	line-height: 3.4;
+	font-weight: bold;
+}
+ion-content {
+  z-index: 9999;
+  color: #ccc;
+}
+.bar.bar-assertive .title {
+  color: #000;
+}*/
+
+/*#search-input {
+  text-align: center;
+}
+
+#photos {
+  margin: auto;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+  float: left;
+  overflow: hidden;
+}
+.photo img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
+}
+#search-bar {
+  background: none;
+  position: absolute;
+  width: 100%;
+  top: 6px;
+  height: 40px;
+  z-index: 3;
+}
+#search-bar .item {
+  background: none;
+  border: none;
+}
+#content {
+  top: 44px;
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+#sidemenu-cat {
+  height: 1000px;
+  top: 14px;
+}
+
+.my-item {
+  left: 0;
+  right: 0;
+}
+
+.io-item {
+  display: inline-block; 
+  margin: 0; 
+  width:200px; 
+  height:200px
+}
+.myVideos .bar {
+  background-image: linear-gradient(0deg, #ddd, #A396F5 50%, transparent 50%);
+  background-color: inherit;
+}*/
+
+#catalogue, #myVideos {
+  top: 50px;
+  height: auto;
+}
+
+/* MYVideos Gallery */
+    .wrap {
+      overflow: hidden;
+      margin: 10px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      width: 20%;
+      padding-bottom: 20%;
+    }
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+    }
+    .boxInner img {
+      width: 100%;
+    }
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: -50px;
+      background: #000;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+    @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+    }
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+      .box {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+    }
+
+.tabSearch {
+  top: 50px;
+}

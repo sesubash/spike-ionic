@@ -1,0 +1,27 @@
+<ion-view title="Items">
+  <ion-content class="padding">
+    <!-- VERTICAL LISTING OF SUB CATEGORIES OF A PARTICULAR CAT -->
+    <div class="list" ng-repeat="subCatItem in getSubcats()">
+    	<h2>Title: {{subCatItem.title}}</h2>
+    	<!-- HORIZONTAL LISTING OF IMAGES WITH TITLE -->
+
+		 <ion-scroll on-drag-up="onDragUp()" on-drag-down="onDragDown()" on-swipe-up="onDragUp()" on-swipe-down="onDragDown()" direction="x" class="item wide-item" ng-style="{'height': '230px'}">
+
+            <div style="margin:0px; position:relative;" class="item"
+                collection-repeat="item in getSubcatData(subCatItem)"
+                collection-item-height="'230'"
+                collection-item-width="'20%'">
+                <div>
+                	<img ng-src='{{item.images[0]["thumb-url"]}}' />
+                </div>
+                <div>
+                	{{item.title}}
+                </div>
+            </div>
+
+        </ion-scroll>
+	    <!-- HORIZONTAL LISTING OF IMAGES WITH TITLE -->
+    </div>
+    <!-- VERTICAL LISTING OF SUB CATEGORIES OF A PARTICULAR CAT -->
+  </ion-content>
+</ion-view>

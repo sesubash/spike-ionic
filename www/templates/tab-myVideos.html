@@ -1,0 +1,36 @@
+<!-- <div id="myVideos"> -->
+	<!-- <div class="bar bar-header">
+	  <button class="button button-clear button-positive" ng-click="pauseAll()">Pause All</button>
+	  <button class="button button-clear button-positive" ng-click="edit()">Edit</button>
+	</div> -->
+	<!-- Gallery Section -->
+	<!-- <div> -->
+
+	<!-- /#wrap -->
+	  <!-- <div class="wrap">
+	  	<content has-header="true"  padding="true" on-infinite-scroll="addMoreItem">
+          <div class="list">	    
+			    
+			    <div class="box" ng-repeat="item in catalougeItems | limitTo:numberOfItemsToDisplay" class="item">
+			      <div class="boxInner">
+			         <img ng-src="{{item.images[0]['thumb-url']}}">
+			        <div class="titleBox">Butterfly</div>
+			      </div>
+			    </div>
+			</div>
+	    </content>
+	  </div> -->
+   <!-- /#wrap -->
+
+
+   <!-- </div> -->
+   <pane ng-controller="MyVideosCtrlGallery">
+   <content has-header="true"  padding="true" on-infinite-scroll="addMoreItem()">
+          <div class=" list">
+            <div ng-repeat="item in catalougeItems | limitTo:numberOfItemsToDisplay" class="item" type="item-text-wrap">
+              <h3>{{item}}</h3>
+            </div>
+          </div>
+        </content>
+    </pane>
+<!-- </div> -->

@@ -1,0 +1,21 @@
+
+    <ion-side-menus id="catalogue">
+		  <!-- Center content -->
+		<ion-side-menu-content edge-drag-threshold="true">
+	        <ion-header-bar class="bar-positive">
+	          <button class="button button-icon ion-navicon" ng-click="toggleLeft()" ng-hide="$exposeAside.active"></button>
+	          <h1 class="title">{{ itemHeading }}</h1>
+	        </ion-header-bar>
+	        <ion-nav-view name="item-content"></ion-nav-view>
+        </ion-side-menu-content>
+		  <!-- Left menu -->
+		  <ion-side-menu side="left" expose-aside-when="large">
+		      <ion-content>
+		          <ion-list>
+		            <ion-item ng-repeat="item in catalougeItems" menu-close enable-menu-with-back-views="false" item="item" href="/#/catalouge/{{item.id}}" ng-click="clicker(item)">
+		              {{ item.title }}
+		            </ion-item>
+		          </ion-list>
+	        </ion-content>
+		  </ion-side-menu>
+		</ion-side-menus>    
