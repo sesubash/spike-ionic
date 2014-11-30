@@ -25,12 +25,16 @@
 
    <!-- </div> -->
    <pane ng-controller="MyVideosCtrlGallery">
-   <content has-header="true"  padding="true" on-infinite-scroll="addMoreItem()">
+   <ion-content class="has-header"  padding="true">
           <div class=" list">
             <div ng-repeat="item in catalougeItems | limitTo:numberOfItemsToDisplay" class="item" type="item-text-wrap">
               <h3>{{item}}</h3>
             </div>
           </div>
-        </content>
+          <ion-infinite-scroll
+				icon="ion-loading-c"
+				on-infinite="addMoreItem()">
+ 		   </ion-infinite-scroll>
+        </ion-content>
     </pane>
 <!-- </div> -->
